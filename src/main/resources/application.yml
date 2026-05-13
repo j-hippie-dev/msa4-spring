@@ -1,0 +1,7 @@
+# 프로퍼티 방식
+#spring.application.name=msa4-spring
+
+# yml 방식
+spring:
+    application:
+        name: msa4-spring
