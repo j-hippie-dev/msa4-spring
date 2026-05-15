@@ -8,6 +8,20 @@ spring:
     web:
       error:
           include-stacktrace: always
+
+    # MySQL
+    datasource:
+      url: jdbc:mysql://localhost:3306/dbsample
+      username: root
+      password: msa505
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+# MyBatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.msa4spring # mapper xml 배포할 위치(배치)
+
+# Log
 logging:
   file:
     # 로그 파일 경로

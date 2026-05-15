@@ -14,6 +14,8 @@ public class ValidationController {
     public String validation(
             @Valid @ModelAttribute ValidationRequest validationRequest
     ) {
+        double test = 1 / 0;
+
         return String.format(
                 "Email: %s, pw: %s, age: %d, name: %s"
                 , validationRequest.email()
